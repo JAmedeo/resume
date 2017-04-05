@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Joe Amedeo</title>
+	<link rel="shortcut icon" href = "{{STATIC_URL}}flavMath.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script async="" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=7e13c32551/cloudflare.min.js"></script>
+	<link rel="stylesheet" href="{{STATIC_URL}}japp/video_style.css">
+</head>
+<body>
+	<video autoplay  poster="{{STATIC_URL}}japp/33RPMS.jpg" id="bgvid">
+	<source src="{{STATIC_URL}}japp/My_First_Project.m4v" type="video/mp4">
+	</video>
+	<!--
+	<button id="vidpause">Pause</button><script class="init" type="text/javascript" src="{{STATIC_URL}}japp/video.js" ></script>
+	-->
+	<div class= "container-fluid">
+		<div class = "row"><br>
+			<div class="fade-in one"><h1>Joe Amedeo</h1></div><br>
+				<div class="fade-in two"><h2>Python and Django Enthusiast</h2></div>
+				<div class="fade-in three"><a class = "btn-wrapper" href="{% url 'japphomeView' %}">Enter Site</a></div>
+
+		</div>
+	</div>
+</body>
+</html>

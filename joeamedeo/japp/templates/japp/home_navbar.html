@@ -1,0 +1,45 @@
+<style>
+li a {
+  color: black;
+}
+.navbg {
+  background-color: rgba(255,255,255, 0.8);
+}
+
+</style>
+
+<nav class="navbar navbar-fixed-top" id="navbg" >
+  <div class="container-fluid">
+    <div class="navbar-header" style="padding-top: 4px;">
+      <p class="navbar-text" style = "font-family: cursive; font-size: 16px;"><b>Joseph Amedeo: <i>Let's build something</i></b></p>
+      <!--
+        <img alt="Brand" src="{{STATIC_URL}}japp/database-logo.jpg" style = "height: 40px; width: 40px;">
+        <img alt="Brand" src="{{STATIC_URL}}japp/python-logo.png" style = "height: 40px; width: 40px;">
+        <img alt="Brand" src="{{STATIC_URL}}japp/django-image.png" style = "height: 40px; width: 40px;">
+        <img alt="Brand" src="{{STATIC_URL}}japp/brandImage.png" style = "height: 40px; width: 40px;">
+        <img alt="Brand" src="{{STATIC_URL}}japp/jquery-logo.png" style = "height: 40px; width: 40px;">
+      -->
+    </div>
+    <ul class="nav nav-tabs navbar-right">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#Introduction">Introduction</a></li>
+      <li><a href="#skills">Skills & Professional Traits</a></li>
+      <li><a href="#longterm">Long-Term Goals</a></li>
+      <li><a href="#gettoknow">Get to know Joe</a></li>
+      <li id="contactoutline"><a href="#Contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+$(window).scroll(function() {
+  var scrollPosition = $(window).scrollTop();
+  var bottom = $('#getnavbackground').position().top;
+  var percentchange= scrollPosition / bottom 
+  if(percentchange >=  0.92){
+    $("#navbg").addClass('navbg');
+  } else {
+    $("#navbg").removeClass('navbg');
+  }
+});
+</script>

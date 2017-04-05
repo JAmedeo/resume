@@ -1,0 +1,352 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+  <title>Joe Amedeo</title>
+  <link rel="shortcut icon" href = "{{STATIC_URL}}flavMath.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="//code.highcharts.com/highcharts.js"></script>
+  <script type="text/javascript" charset="utf8" src="{{STATIC_URL}}ga.min.js" ></script>  
+<style>
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.titleText {
+    font-family: "proxima-nova";
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(26, 26, 26, 0.8);
+    text-indent: 50px;
+}
+.h1Titles {color: rgba(26, 26, 26, 0.9);
+cursor: auto;
+font-family: "adobe-garamond-pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 38.4px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+text-align: center;
+text-rendering: optimizelegibility;
+text-transform: none;
+-moz-osx-font-smoothing: auto;
+}
+.SparationLine {
+background-color: #1A1A23;
+border-bottom-color: #1A1A23;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100% 100% 100% 100%;
+border-image-source: none;
+border-image-width: 1 1 1 1;
+border-left-color: #1A1A23;
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: #1A1A23;
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: #1A1A23;
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: content-box;
+color: #1A1A23;
+font-family: "proxima-nova";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+height: 1px;
+letter-spacing: 0px;
+line-height: 28.8px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+-moz-osx-font-smoothing: auto;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  color:black;
+}
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+.Jquote {
+color: white;
+cursor: auto;
+font-family: "adobe-garamond-pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 18.4px;
+text-align: left;
+text-indent: 50px;
+text-rendering: optimizelegibility;
+text-transform: none;
+-moz-osx-font-smoothing: auto;
+}
+
+.navbarimage{
+    height: 80%;
+}
+.headlogo{
+    height:100%;
+    width:100%;
+    background-image: url({{STATIC_URL}}japp/coffe.jpg);
+    background-size: 100%;
+}
+
+#joeamedeo{
+  text-align:center; 
+  padding-top: 60px;
+  font-size: 48px;
+  font-family: cursive;
+
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
+}
+#joeamedeo2{
+  text-align:center; 
+  padding-top: 10px;
+  font-size: 34px;
+  font-family: cursive;
+
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2.5s;
+  -moz-animation-duration:2.5s;
+  animation-duration:2.5s;
+}
+#joeamedeo3{
+  text-align:center; 
+  padding-top: 10px;
+  font-size: 26px;
+  font-family: cursive;
+
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:3.5s;
+  -moz-animation-duration:3.5s;
+  animation-duration:3.5s;
+}
+.borderbottom {
+  width:inherit;
+  background-height:2px;
+  background-image:
+    radial-gradient(
+      yellow,
+      #f06d06
+    );
+}
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 25%;
+  width: 25%;
+  text-align: center;
+}
+.card__front, .card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__front, .card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+
+.card__back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.card.effect__hover:hover .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__hover:hover .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+
+.stargreen {
+    color: rgba(118,211,99,1);
+}
+.starblue {
+    color: rgba(116,173,224,1);
+}
+.starorange {
+    color: rgba(237,152,82,1);
+}
+.fliplist {
+  padding-left:8px;
+}
+#serversidetext, #clientsidetext, #misctext, #operatingtext {
+  display: none;
+  color:white;
+}
+#serverside, #clientside, #misc, #operating {
+  color:rgba(255,255,255,1.0);
+}
+.borderline { border-bottom: 1px solid black;
+  width:50%;
+  overflow: hidden;
+  }
+</style>
+</head>
+<body id="top">
+
+  <div class="navbarimage">
+    <div class="headlogo" id="darkeronhover">
+      <div style="background:rgba(0, 0, 0,0.55); height:100%; width:100%;  color: white;">
+        <p id = "joeamedeo">Joseph Amedeo</p>
+        <p id = "joeamedeo2">Professional Engineer</p>
+        <p id = "joeamedeo3">Python and Django Enthusiast</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+var imageHeight = parseInt($('.headlogo').css('height')),
+    stopHeight= imageHeight / 2,
+    marginHeight = parseInt($('.navbarimage').css('margin-top'))
+    stopMargin = marginHeight / 2;
+
+$(window).scroll(function(e) {
+var windowScroll = $(window).scrollTop(),
+    newMargin = marginHeight - windowScroll,
+    newHeight = imageHeight - windowScroll;
+    if(newHeight>=stopHeight){
+        $('.headlogo').css("height", newHeight);
+        $('.navbarimage').css("margin-top", newMargin);
+    }
+    else{
+        $('.headlogo').css("height", stopHeight);
+    }
+</script>
+
+{% include 'japp/home_navbar.html' %}
+
+
+
+<div class="container-fluid" id = "getnavbackground">
+  <div class="row">
+    <div class = "col-lg-10 col-lg-offset-1">
+     <div class="row" style="padding-top: 50px; padding-bottom:50px;">
+        <div class = "col-lg-12 ">
+          <h1 class = "h1Titles" id="Introduction">Introduction</h1>
+          {% include 'japp/home_introduction.html' %}
+        </div>
+        <div class="borderbottom"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class = "col-lg-12">
+      <div class="container-fluid" style="background-color: rgba(105,105,105,1);">
+        <div class="row"  style="padding-bottom:50px;">
+          <div class = "col-lg-12">
+            <h1 class = "h1Titles" id="skills" style = "color:white; padding-top:50px;">
+              Skills & Professional Traits</h1>
+              <p style ="text-align:center; color: white;"><i>(Hover over to see a detailed description)</i></p>
+              {% include 'japp/home_skills.html' %}
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" style="padding-top: 50px; padding-bottom:50px;">
+            <div class = "col-lg-12">
+              <h1 class = "h1Titles" id="longterm">Long-Term Goals</h1>
+              {% include 'japp/home_longterm.html' %}
+              <div class = "col-lg-4"></div>
+              <div <div class = "col-lg-8 text-center">
+                <div class = "borderline" style = "padding-top: 50px;"></div>
+              </div>
+              <div class = "col-lg-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" style="padding-bottom:50px;">
+            <div class = "col-lg-12">
+              <h1 class = "h1Titles" id="gettoknow">Beyond the Self-Proclaimed Nerd!</h1>
+              {% include 'japp/home_gettoknow.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row" style="padding-top: 50px;">
+  <div class="col-lg-1"></div>
+  <div class = "col-lg-10" style="background-color: #696969; color: white;">
+    <h1 class = "h1Titles"  id="Contact" style="color: white;">Contact</h1>
+    <div class="row" style="background-color: #696969; color: white;">
+      {% include 'japp/home_contact.html' %}
+    </div>
+  </div>
+  <div class="col-lg-1"></div>
+</div>
+    
+
+
+
+</body>
+</html>

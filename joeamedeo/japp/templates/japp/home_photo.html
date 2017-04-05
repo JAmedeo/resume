@@ -1,0 +1,211 @@
+<head>
+  <title>Joe Amedeo</title>
+  <link rel="shortcut icon" href = "{{STATIC_URL}}flavMath.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="//code.highcharts.com/highcharts.js"></script>
+<style>
+.titleText {
+    font-family: "proxima-nova";
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(26, 26, 26, 0.6);
+    text-indent: 50px;
+}
+.h1Titles {color: rgba(26, 26, 26, 0.9);
+cursor: auto;
+font-family: "adobe-garamond-pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 38.4px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+text-align: center;
+text-rendering: optimizelegibility;
+text-transform: none;
+-moz-osx-font-smoothing: auto;
+}
+.SparationLine {background-color: #1A1A23;
+border-bottom-color: #1A1A23;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100% 100% 100% 100%;
+border-image-source: none;
+border-image-width: 1 1 1 1;
+border-left-color: #1A1A23;
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: #1A1A23;
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: #1A1A23;
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: content-box;
+color: #1A1A23;
+font-family: "proxima-nova";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+height: 1px;
+letter-spacing: 0px;
+line-height: 28.8px;
+margin-bottom: 32px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 32px;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+-moz-osx-font-smoothing: auto;
+}
+body { 
+  padding-top: 70px; 
+  position: relative;
+}
+#con .well {
+    height:400px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  color:black;
+}
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+.Jquote {
+color: white;
+cursor: auto;
+font-family: "adobe-garamond-pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 18.4px;
+text-align: left;
+text-indent: 50px;
+text-rendering: optimizelegibility;
+text-transform: none;
+-moz-osx-font-smoothing: auto;
+}
+
+</style>
+</head>
+<body   id="Home"  data-spy="scroll">
+
+<div class="container" id="con">
+  <div class="row">
+    <div class="span12">
+      <div class="well">         
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'japp/home_navbar.html' %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class = "col-lg-10 col-lg-offset-1">
+      <div class = "col-lg-12">
+        <h1 class = "h1Titles" id="Introduction"  style = "padding-top: 50px; padding-bottom: 50px; ">Introduction</h1>
+        <br>
+        <div class="row">
+          <div class = "col-lg-6">
+             <h3 class = "titleText">
+              Lorem ipsum dolor sit amet, dicit dignissim vix ut, cu pro dolor facilisi, cu quo dicam mnesarchum. At cum animal virtute interesset, his bonorum atomorum urbanitas at, oratio albucius duo cu. Cu pro zril feugiat voluptua. Quidam docendi salutandi mei at, labore consulatu delicatissimi no pro. Et eum quem ipsum nominati, postulant dissentias intellegebat te qui. Animal virtute appellantur mei ut, malis intellegam eloquentiam his ei, sed errem libris denique in.
+
+              Vidit nobis animal in eos, audire scribentur eu mei. Ex nec mutat quodsi. No voluptua consequat has. Ceteros delectus petentium ad usu, summo populo iuvaret id est, everti phaedrum sed ut. Usu tation audire deseruisse ei, mel ei nostro facete. Persius noluisse imperdiet vis id, aeterno sadipscing te ius.
+
+              Ea vis accusata imperdiet, ex populo audiam ocurreret sit. Idque quando per et, in vitae voluptaria quo. Sed error nominati instructior in, nam no omnes mollis neglegentur. Ea clita petentium duo, elitr dicant deleniti ad sed. Ei nam novum malorum moderatius. Mei legimus posidonium eu, animal numquam interesset et cum.
+              <br>
+              <i>* Joe does not really enjoy margaritas: too much sugar.</i>
+            </h3>
+          </div>
+          <div class = "col-lg-5 col-lg-offset-1">
+           <img src="{{STATIC_URL}}joeAmedeo.png" alt=""  class="img-responsive center-block" style = "padding-top: 50px; ">
+           <p class="text-center"><i>The above image is probably a picture of Joe standing in front of a brick wall looking presentable.</i></P>
+           </div>
+         </div>
+         <div class="SparationLine"></div>
+       </div>
+        <div class = "col-lg-12"><h1 class = "h1Titles" id="Background" style = "padding-top: 50px; padding-bottom: 50px; ">Background</h1>
+          <div class="row">
+            <div class = "col-lg-5">
+              {% include 'japp/home_xkcdcarousel.html' %}
+              <p class="text-center"><i>Joe thoroughly enjoys </i><a href = "https://xkcd.com/">xkcd</a>, A webcomic of romance, sarcasm, math, and language<i> because science. </i></P>
+              </div>
+              <div class = "col-lg-6 col-lg-offset-1">
+                <h3 class = "titleText">
+                  Lorem ipsum dolor sit amet, dicit dignissim vix ut, cu pro dolor facilisi, cu quo dicam mnesarchum. At cum animal virtute interesset, his bonorum atomorum urbanitas at, oratio albucius duo cu. Cu pro zril feugiat voluptua. Quidam docendi salutandi mei at, labore consulatu delicatissimi no pro. Et eum quem ipsum nominati, postulant dissentias intellegebat te qui. Animal virtute appellantur mei ut, malis intellegam eloquentiam his ei, sed errem libris denique in.
+
+                  Vidit nobis animal in eos, audire scribentur eu mei. Ex nec mutat quodsi. No voluptua consequat has. Ceteros delectus petentium ad usu, summo populo iuvaret id est, everti phaedrum sed ut. Usu tation audire deseruisse ei, mel ei nostro facete. Persius noluisse imperdiet vis id, aeterno sadipscing te ius.
+
+                  Ea vis accusata imperdiet, ex populo audiam ocurreret sit. Idque quando per et, in vitae voluptaria quo. Sed error nominati instructior in, nam no omnes mollis neglegentur. Ea clita petentium duo, elitr dicant deleniti ad sed. Ei nam novum malorum moderatius. Mei legimus posidonium eu, animal numquam interesset et cum.
+                </div>
+              </div>
+          <div class="SparationLine"></div>
+        </div>
+        <div class = "col-lg-12"><h1 class = "h1Titles" id="Third-Section" style = "padding-top: 50px; padding-bottom: 50px; ">Hobbies</h1>
+          <div class="row">
+            {% include 'japp/home_hobbies.html' %}
+          </div>
+          <div class="SparationLine"></div>
+        </div>
+        <div class = "col-lg-8 col-lg-offset-2" style="background-color: #696969; color: white;"><h1 class = "h1Titles"  id="Contact" style="color: white;">Contact</h1>
+          <div class="row" style="background-color: #696969; color: white;">
+            {% include 'japp/home_contact.html' %}
+          </div><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

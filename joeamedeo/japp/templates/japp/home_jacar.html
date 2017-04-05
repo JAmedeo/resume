@@ -1,0 +1,59 @@
+<style>
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+.fixedcarousel img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-control .glyphicon-chevron-left {
+  color:black;
+}
+.carousel-control .glyphicon-chevron-right {
+  color:black;
+}
+.fixedcaptionheight {
+  width: auto;
+  height: 38px;
+  max-height: 38px;
+}
+</style>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active fixedcarousel">
+      <img class = "fixedcarousel" src="{{STATIC_URL}}japp/joeAmedeo.png">
+      <div class="fixedcaptionheight text-center">
+        This is Joe Amedeo.<br>
+      </div>
+    </div>
+    <div class="item fixedcarousel">
+      <img class = "fixedcarousel"  src="{{STATIC_URL}}japp/joepresenting.jpg">
+      <div class="fixedcaptionheight text-center">
+        <i>Joe Amedeo giving a presentation on Alumni Day to the Physics department's faculty and students.<br>Special thanks to the Illinois State University Physics department for the invite!</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+<script>
+$('.carousel').carousel({
+  interval: 5000
+})
+</script>
+
+

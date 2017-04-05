@@ -1,0 +1,74 @@
+<div class="col-lg-1"></div>
+<div class = "col-lg-5" style = "padding-top:50px;">
+	<h3 class = "titleText">
+       Joe Amedeo currently lives in Roscoe Village, a quaint neighborhood of Chicago, IL.  Like many other Chicagoans, he believes Chicago is one of the best places to live during the summer and curses the harsh winters.  Thankfully there is deep-dish pizza to make the winters a little more bearable!  During his childhood, Joe grew up playing baseball and is a huge White Sox fan.  Since Joe is a lefty and loves pitching, his favorite players are Chis Sale, CC Sabathia, and Madison Bumgarner.  Although it has been a rough couple of years, Joe is also a huge Chicago Bears fan!  Joe also loves music - going to live concerts, blues halls on the weekends, and collecting vinyl records.  Lastly, Joe is quite the coffee connoisseur.  He enjoys picking up beans from different coffee roasters and is always looking for a unique coffee shop for a refreshing cup o’ joe.
+    </h3>
+</div>
+<div class="col-lg-1"></div>
+<div class = "col-lg-5">
+    <div id="vinyls" ></div>
+    <p class="text-center">
+        <!--
+        <i>HighCharts is Joe's favorite JavaScript library for visually representing data not only for HighCharts's well-documented API but also their sleek designs.  <br>See it in action above!</i>-->
+    </P>
+</div>
+
+<script>
+$(function () {
+
+    // Radialize the colors
+    Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+        return {
+            radialGradient: { cx: 0.5, cy: 0.3, r: 0.7 },
+            stops: [
+                [0, color],
+                [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+            ]
+        };
+    });
+
+    // Build the chart
+    $('#vinyls').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: "Joe's music collection by genre"
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b><br> {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                    },
+                    connectorColor: 'silver'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'collection share',
+            data: [
+                ["Rock 'n' Roll", 50],
+                ["Jazz", 18],
+                ['Blues', 24],
+                {
+                    name: 'Hip Hop<br>(<i>for perspective</i>)</br>',
+                    y: 5,
+                    sliced: true,
+                    selected: true
+                },
+            ]
+        }]
+    });
+});
+</script>
